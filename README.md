@@ -1,1 +1,1 @@
-Terraform labs on AWS and OracleCloud
+Terraform labs on AWS and OCI
