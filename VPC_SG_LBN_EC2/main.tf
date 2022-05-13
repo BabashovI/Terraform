@@ -143,7 +143,7 @@ output "my-public-ip" {
 // Sends your public key to the instance
 resource "aws_key_pair" "app-key-pair" {
   key_name   = "./keys/app-key-pair"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD3pEfRLfJRqwr312Py4NXABfCYjFR0Kd2StvOQ8uOjESBgA+Nyn602eKL4tmIABaCgLFSd5x64dWvv5kk4v+nrLY/paw4c/y77Fh0VFLfbffmQQuWKQxT/jxx6xsB4TudkuyaEn8WjX2CG8Jbqp9kmGnIFJWZ+vz0QHbKKrn/ggRMMrXbSTH3CwRJDYRBIqM38RB4G65HfQfaM2bSVMZOPJp2P4PmvY2NG9kR9kCBv4mhg3E7UFeuwJK1+qXNnp5ytHcMx0S/fTmToFO8TAdsdOcoM1nhOeOeG+KYH+5X3MRS7lBPfYiSf80I4h5olD6rybjPLsX2DnXn1YiTj35RouTPOyFz2Npis2P0R1gQK4mgaKNziQsbF8G1CyBGLG93oZp1KxwCSNlasMD4P3VGajq1UfZYTWuRefRy0XcPKpfFlcmlhEqpdfdHmh2dqko5mELoPqRPcrlx5CBsi5ZIcndyRmAb3WQ0MAVPeQ10/ltRmBohOieFnXdHDOy4XKWU= ibabashov@ibabashov-mac"
+  public_key = file("./keys/app-key-pair")
   }
 
 #app
